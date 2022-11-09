@@ -12,7 +12,7 @@ x_train = tf.keras.utils.normalize(x_test, axis=1)
 
 
 model = tf.keras.models.load_model('handwritten.model') 
-image_number = 1
+
 
 print(np.argmax(model.predict(x_test)[400]))
 plt.imshow(x_test[400],cmap=plt.cm.binary)
